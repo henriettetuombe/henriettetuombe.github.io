@@ -1,52 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henriette Tuombe - Web Design Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Henriette Tuombe</h1>
-        <p>Web Designer | Software Engineering Student</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henriette Tuombe - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body id="body-design">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate web designer and Software Engineering student with a keen eye for user experience and functionality.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Residence Management System</h3>
-            <p>A web-based platform for managing university residences. Developed with Django and JavaScript.</p>
-            <a href="https://github.com/henriettetuombe/residence_management" target="_blank">View Project on GitHub</a>
+    <!-- navigation bar -->
+    <section id="navigation-link-container">
+      <div id="container1">
+        <div>
+          <ul class="logo">
+            <!-- SVG Logo or other branding here -->
+          </ul>
         </div>
-        <div class="project">
-            <h3>Data Visualization Dashboard</h3>
-            <p>An interactive dashboard for visualizing data insights using Python and JavaScript.</p>
-            <a href="https://github.com/henriettetuombe/Data-Science-Project" target="_blank">View Project on GitHub</a>
+        <nav>
+          <ul id="first-navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
+        </nav>
+        
+        <a href="" id="menu"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <ul class="display-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>
+      </ul>
+    </section>
+    <!-- End of navigation bar -->
+    
+    <!-- Introduction and about-me section -->
+    <section id="about-me-container">
+      <p class="greeting-word">Hello, I'm Henriette</p>
+      <p class="play-role">
+        Full-stack Developer || <br />
+        Graphic Designer || <br />
+        Mentor
+      </p>
+      <div id="description-image-container">
+        <p id="first-paragraph">
+          Welcome to my digital space where lines of code come to life. I'm
+          Henriette, a passionate software developer on a journey to create
+          innovative solutions. Explore my projects, delve into the code, and
+          join me in this exciting tech adventure.
+        </p>
+        <img src="./UI/images/image-removebg-preview2.png" style="border-radius: 40%;" alt="Henriette Tuombe" />
+        <p id="second-paragraph">
+          Welcome to my digital space where lines of code come to life. I'm
+          Henriette, a passionate software developer on a journey to create
+          innovative solutions. Explore my projects, delve into the code, and
+          join me in this exciting tech adventure.
+        </p>
+        <div>
+          <a href=""><i class="fa-solid fa-circle-check"></i>32 projects</a>
+          <a href="./UI/images/My Professional CV.pdf"><i class="fa-solid fa-circle-down"></i>Download my Resume</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of introduction and About me section -->
+    
+    <!-- About me section design -->
+    <section class="about-me-section" id="about">
+        <h1>About Me</h1>
+        <p>I'm a passionate web developer, software engineer, and programmer skilled in Python, HTML, CSS, and JavaScript. I transform ideas into captivating websites and prioritize clean, efficient code for seamless performance. My expertise extends to frameworks like React, Node.js, Express.js, and Flask, as well as databases like MongoDB and MySQL, enabling me to build robust applications that conquer real-world challenges. Collaboration is my forte – I thrive on open communication, working closely with designers and stakeholders to bring projects to life. Problem-solving excites me, and I'm dedicated to finding elegant solutions that enhance user experiences. In the fast-paced tech world, I value adaptability, continuously learning and staying current with industry trends. I'm enthusiastic about contributing my skills to cutting-edge projects that push the limits of innovation.
+        </p>
+    </section>
+    <!-- End of About me section -->
+    
+    <!-- Skills section design -->
+    <section class="skills-section" id="skills">
+        <h1>Skills</h1>
+        <div>
+          <div class="skills-container">
+            <span><i class="fa-solid fa-code"></i>HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+            <span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <span><i class="fa-brands fa-react"></i>React</span>
+            <span><i class="fa-solid fa-database"></i>SQL</span>
+          </div>
+          <div class="skills-level-container">
+              <div class="skills-level level1" data-percent="90">90%</div>
+              <div class="skills-level level2" data-percent="92.5">92.5%</div>
+              <div class="skills-level level3" data-percent="70">70%</div>
+              <div class="skills-level level4" data-percent="67">67%</div>
+              <div class="skills-level level5" data-percent="50">50%</div>
+          </div>
         </div>
     </section>
+    <!-- End of skills section -->
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Responsive Design</li>
-            <li>API Integration and Web Services</li>
-        </ul>
+    <!-- Projects section design -->
+    <section id="projects-section">
+        <h1>Projects</h1>
+        <div class="projects-section-container">
+            <span id="icons-project"><a href=""><i class="fa-solid fa-chevron-left"></i></a></span>
+            <div class="project-div1 single-project">
+                <h1 id="javascript-title">JavaScript Calculator</h1>
+                <p>Using JavaScript, I created a modern calculator that is easy to use and includes essential features.</p>
+                <button>DEMO</button>
+            </div>
+            <div class="project-div2 single-project">
+                <h1>Advice Generator App</h1>
+                <p>This app demonstrates the use of API integration with JavaScript to generate random advice.</p>
+                <button class="two-button">DEMO</button>
+            </div>
+            <div class="project-div3 single-project">
+                <h1>Employee Management System</h1>
+                <p>This system manages employee data using REST API and MongoDB for data storage and management.</p>
+                <button>DEMO</button>
+            </div>
+            <span id="icons-project"><a href=""><i class="fa-solid fa-chevron-right"></i></a></span>
+        </div>
     </section>
+    <!-- End of projects section -->
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via <a href="mailto:henrytuorb@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/henriettetuombe/">LinkedIn</a>.</p>
+    <!-- Contact Us section -->
+    <section class="contactUs-container" id="contactUs">
+        <h1>Contact Form</h1>
+        <p>If you have any questions or suggestions, please don’t hesitate to contact me by filling out the form below.</p>
+        <form action="" id="form">
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" />
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <p id="errorProvidedMessage"></p>
+            
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="5" placeholder="Type here..." id="message"></textarea>
+            
+            <button>Send</button>
+        </form>
     </section>
+    <!-- End of contact section -->
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Henriette Tuombe</p>
+        <div id="address">
+            <span>Address:</span>
+            <span>Kigali-Rwanda/NYG0000</span>
+            <span>Tel:+250785557397</span>
+            <span>Email:henrytuorb@gmail.com</span>
+        </div>
+        <div id="social-media-icons">
+            <span>Social Media:</span>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/henriettetuombe"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/henriettetuombe"> <i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div id="copyright">
+            <span>&copy; 2024 Henriette Tuombe</span>
+        </div>
     </footer>
-</body>
+    <!-- End of footer section -->
+
+    <script src="portfolio.js"></script>
+  </body>
 </html>

@@ -1,0 +1,1219 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root 
+{
+    --text-full-screen-font-size: 22px;
+    --text-tablet-font-size:20px;
+    --text-mobile-font-size: 18px;
+    --title-full-screen-font-size: 48px;
+    --title-tablet-font-size: 32px;
+    --title-mobile-font-size: 24px
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-full-screen-font-size);
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    min-height: 800px;
+    width: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* start of navigation menu */
+
+#container1 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #F1F9F8;
+    padding-bottom: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a 
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+ul li a:hover
+{
+    color: blue;
+}
+#container1 nav ul 
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+#container1 nav ul li 
+{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+nav ul li:hover 
+{
+    color: #204EC2;
+    cursor: pointer;
+}
+
+
+#menu
+{
+    display: none;
+}
+
+
+.logo 
+{
+    padding-left: 40px;
+}
+
+.display-menu
+{
+    display: none;
+}
+
+
+
+
+
+
+/* end of navigation menu design */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Home section */
+
+
+
+.greeting-word 
+{
+    margin-bottom: 0px;
+    font-size: var(--title-full-screen-font-size);
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: #C79F9F;
+    padding-top: 20px;
+}
+
+
+#about-me-container 
+{
+    display: block;
+}
+
+
+.play-role 
+{
+    text-align: center;
+    font-size: var(--title-full-screen-font-size);
+    
+}
+
+#second-paragraph 
+{
+    display: none;
+    
+}
+
+
+
+
+
+
+#description-image-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+} 
+
+
+#description-image-container div 
+{
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+#description-image-container div a 
+{
+    color: black;
+    text-decoration: none;
+
+}
+
+#description-image-container>img 
+{
+    border-radius: 131px;
+}
+
+#description-image-container div a i 
+{
+    padding-right: 18px;
+    color: rgb(72, 70, 70);
+}
+
+
+
+
+
+
+
+
+
+
+/*end of Home section design*/
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* start of About Me section design*/
+
+.about-me-section 
+{
+    width: 100%;
+    padding: 40px 40px;
+    background-color: #F1F9F8;
+    margin-top: 50px;
+        
+}
+
+.about-me-section h1 
+{
+    text-align: center;
+    font-size: var(--title-full-screen-font-size);
+    margin-bottom: 30px;
+}
+
+
+.about-me-section p 
+{
+    text-align: center;
+   
+}
+
+
+
+
+
+
+
+/* End of About Me section design*/
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Start of project section design*/
+
+
+
+#projects-section 
+{
+    padding: 40px;
+    padding: 40px;
+}
+
+#projects-section h1 
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 20px;
+    width: 100%;
+
+}
+
+.projects-section-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects-section 
+{
+    background-color: #F1F9F8;
+    padding: 20px 20px;
+}
+
+.projects-section-container div:nth-of-type(1)
+{
+    background-image: url(./UI/images/calculator3.webp);
+}
+
+.projects-section-container div:nth-of-type(2) 
+{
+    background-image: url(./UI/images/pankaj-patel-ruiU36AR5zo-unsplash.jpg);
+}
+
+.projects-section-container div:nth-of-type(3)
+{
+    background-image: url(./UI/images/calculator3.webp);
+}
+
+.projects-section-container div:nth-of-type(4)
+{
+    background-image: url(./UI/images/pankaj-patel-ruiU36AR5zo-unsplash.jpg);
+}
+
+
+.single-project 
+{
+    width: 100%;
+    color: white;
+    font-weight: 400px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 400px;
+}
+
+
+
+.single-project p 
+{
+    text-align: center;
+    padding: 15px 20px;
+}
+#project-section 
+{
+    width: 100%;
+}
+
+#icons-project 
+{
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+
+.single-project button 
+{
+    
+    width: 140px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #D5DBE3;
+    border: none;
+    margin-top: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+    margin-left: 30%;
+    
+}
+
+
+
+
+#projects-section
+{
+    width: 100%;
+    height: 100%;
+        
+}
+
+.single-project 
+{
+    width: 100%;
+}
+
+.single-project button:hover {
+    color:#97B5DE;
+    
+}
+
+
+/* End of Project section design */
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Blog container design*/
+
+
+.container-blog {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.blog-section 
+{
+    width: 100%;
+    padding: 40px 40px;
+
+}
+
+#main-title-blog
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--text-full-screen-font-size);
+    padding-bottom: 30px;
+}
+
+.container-blog>div 
+{
+    
+    
+    background-color: #D5DBE3;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    position: relative;
+    left: 25px;
+}
+
+
+.container-blog>div>h1 
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--text-full-screen-font-size);
+}
+
+.container-blog>div> p 
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.container-blog>div>#read-more 
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#read-more a 
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#read-more a:nth-of-type(1)
+{
+    
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+#read-more a:hover
+{
+    color: blue;
+} 
+
+
+
+
+
+
+
+/* End of Blog container design*/
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Skills container design*/
+
+.skills-container 
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.skills-section 
+{
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.skills-level-container 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .skills-level
+{
+    width: 4rem;
+    height: 4rem;
+    
+    border-radius: 9rem;
+    margin: 1.5rem;
+
+    
+    animation: circularBar 1s ease-out infinite;
+    
+}
+@keyframes circularBar
+{
+    0%{
+        transform: rotate(0deg);
+        border-top: 1px solid green;
+    }
+    50%{
+        transform: rotate(180deg) ;
+        border-top: 1px solid red;
+        border-right: 1px solid green;
+    }
+}
+
+
+
+
+.skills-level span 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+} */
+
+
+.skills-section h1 
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.skills-container i 
+{
+    margin-right: 10px;
+}
+
+
+.skills-level span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+} 
+/* End of skills section design*/
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+/* Contact Us section  design*/
+
+
+.contactUs-container 
+{
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.contactUs-container p,.contactUs-container>h1
+{
+    text-align: center;
+    
+}
+.contactUs-container>h1
+{
+    font-size: var(--title-full-screen-font-size);
+    margin-bottom: 30px;
+}
+.contactUs-container form :is(label, input, button)
+{
+    display: block;
+    margin-bottom: 30px;
+    
+}
+input[type="text"], input[type="email"], textarea 
+{
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+form 
+{
+    margin-top: 50px;
+}
+
+form label {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+textarea {
+    
+    
+    border-radius: 10px;
+    height: 200px;
+    margin: auto;
+   
+    
+
+}
+
+.contactUs-container form button 
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    font-size: var(--text-full-screen-font-size);
+    background-color: #D5DBE3;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    margin-left: 47%; 
+}
+
+form button:hover 
+{
+    color:blue;
+
+}
+
+
+.fa-brands:hover{
+    color: blue;
+}
+
+
+
+
+
+/* End of Contact Us section design*/
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* start of footer section */
+
+#address2 
+{
+    display: none;
+}
+
+footer {
+    background-color: #F1F9F8;
+    width:100%
+}
+
+footer #address {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+footer #social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer #social-media-icons a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+footer #social-media-icons a:nth-of-type(1){
+    margin-left: 20px;
+}
+
+footer #social-media-icons a:hover {
+    color: blue;
+
+}
+
+footer i {
+    color: rgb(72, 70, 70);
+}
+
+footer #copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+#back-to-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+
+/* End of footer section  design*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Responsive design for mobile device */
+
+@media screen and (max-width: 768px){
+
+
+    body 
+    {
+        font-size: var(--text-mobile-font-size);
+    }
+
+   
+    nav {
+        display: none;
+    }
+
+    #container1 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 50px;
+    }
+
+    #menu 
+    {
+        display: block;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+    #navigation-link-container 
+    {
+        background-color: #F1F9F8;
+    }
+
+    .greeting-word {
+        margin-bottom: 30px;
+        font-size: var(--title-mobile-font-size);
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #C79F9F;
+        padding-top: 30px;
+    }
+
+    .play-role 
+    {
+        font-size: var(--title-mobile-font-size);
+    }
+
+
+    #first-paragraph 
+    {
+        display: none;
+    }
+
+    #second-paragraph 
+    {
+        display: block;
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    #description-image-container 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        justify-items: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #description-image-container img 
+    {
+        margin-top: 60px;
+    }
+
+    #description-image-container div
+    {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+    }
+
+    #about-me-section 
+    {
+        width: 100%;
+
+    }
+    .about-me-section h1 , .skills-section h1 , .blog-section h1, .contactUs-container h1
+    {
+        font-size: var(--title-mobile-font-size);
+    }
+
+    #icons-project
+    {
+        display: none;
+    }
+
+    .single-project 
+    {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .single-project h1 
+    {
+        font-size: var(--title-mobile-font-size);
+    }
+
+    
+
+    .projects-section-container 
+    {
+        display: block;
+    }
+
+    #projects-section
+    {
+        width: 100%;
+        height: 100%;
+        padding-right: 60px;
+        
+    }
+
+    .single-project button 
+    {
+        
+        margin-left: 35%;
+        margin-bottom: 10%;
+        font-size: var(--title-mobile-font-size);
+    }
+
+
+    .container-blog>div>h1 
+    {
+        font-size: var(--title-mobile-font-size);
+    }
+    .container-blog
+    {
+        display: block;
+        width: 100%;
+    }
+    #read-more 
+    {
+        
+        position: relative;
+        bottom: 20px;
+        
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 400px;
+        
+        
+    }
+
+    form button 
+    {
+        font-size: var(--title-mobile-font-size);
+    }
+
+    footer>#address {
+        display: none;
+    }
+    footer>#address2 
+    {
+        display: block;
+        text-align: center;
+        
+    }
+
+    footer>#address2>p 
+    {
+        padding-top: 30px;
+    }
+
+    footer>#address2>span 
+    {
+        margin-right: 20px;
+        position: relative;
+        top: 10px;
+    }
+
+    .display-menu 
+    {
+        display: none;
+    } 
+
+    .show-menu 
+    {
+        display: block;
+    }
+
+    .show-menu 
+    {
+        background-color:#F1F9F8;
+        width: 100%;
+        padding: 0px;
+        height: 450px;
+    }
+
+    .show-menu li 
+    {
+        list-style: none;
+        color: black;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .show-menu li:not(:nth-child(6))
+    {
+        border-bottom: 1px solid lightgray;
+        border-radius: 10px;
+        
+    }
+    .show-menu li a 
+    {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        
+        padding-top: 50px;
+        padding-bottom: 30px;
+        
+    }
+
+    .show-menu li a:hover
+    {
+        color: #FF9C00;
+        border-radius: 10px;
+        background-color: #F8F8F8; 
+        transition: background-color 0.3s ease, color 0.3s ease; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .show-menu li a {
+        position: relative;
+        text-decoration: none;
+    }
+
+    .show-menu li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ccc;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    .show-menu li a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+}
+
+
+/* End of  Responsive design for mobile device */
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* Start of Responsive design for tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    body 
+    {
+        font-size: var(--text-tablet-font-size);
+    }
+
+    nav {
+        display: none;
+    }
+
+    #menu 
+    {
+        display: block;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #container1 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 50px;
+    }
+
+    .greeting-word {
+        margin-bottom: 60px;
+        font-size: 45px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #C79F9F;
+        padding-top: 20px;
+        font-size: var(--title-tablet-font-size);
+    }
+
+    .play-role 
+    {
+        font-size: var(--title-tablet-font-size);
+    }
+
+    #first-paragraph 
+    {
+        display: none;
+    }
+
+    #description-image-container 
+    {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #second-paragraph 
+    {
+        display: block;
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 30px;
+        text-align: center;
+        font-size: var(--text-tablet-font-size);
+    }
+
+    #description-image-container 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        justify-items: center;
+    }
+
+    #description-image-container img 
+    {
+        margin-top: 60px;
+    }
+
+    #description-image-container div
+    {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+    }
+    #projects-section
+    {
+        width: 100%;
+        height: 100%;
+        padding-right: 60px;
+
+    }
+
+
+    .about-me-section h1 , .skills-section h1 , .blog-section h1, .contactUs-container h1
+    {
+        font-size: var(--title-tablet-font-size);
+        
+    }
+
+    .about-me-section 
+    {
+        width: 100%;
+        
+    }
+
+    .projects-section-container 
+    {
+        display: block;
+    }
+
+    .single-project
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+
+    }
+
+    #single-project h1, #single-project button,.container-blog h1 
+    {
+        font-size: var(--title-tablet-font-size);
+    }
+    #icons-project
+    {
+        display: none;
+    }
+
+    .single-project 
+    {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    
+
+    .projects-section-container 
+    {
+        display: block;
+    }
+    .single-project button 
+    {
+        
+        margin-left: 40%;
+        margin-bottom: 5%;
+    }
+
+    footer>#address {
+        display: none;
+    }
+    footer>#address2 
+    {
+        display: block;
+        text-align: center;
+        
+    }
+
+    footer>#address2>p 
+    {
+        padding-top: 30px;
+    }
+
+    footer>#address2>span 
+    {
+        margin-right: 20px;
+        position: relative;
+        top: 10px;
+    }
+    .display-menu 
+    {
+        display: none;
+    } 
+
+    .show-menu 
+    {
+        display: block;
+        
+    }
+
+    .show-menu 
+    {
+        background-color:#F1F9F8;
+        width: 100%;
+        padding: 0px;
+        height: 450px;
+    }
+
+    .show-menu li 
+    {
+        list-style: none;
+        color: black;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .show-menu li:not(:nth-child(6))
+    {
+        border-bottom: 1px solid lightgray;
+        border-radius: 10px;
+        
+    }
+    .show-menu li a 
+    {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        
+        padding-top: 50px;
+        padding-bottom: 30px;
+        
+    }
+
+    .show-menu li a:hover
+    {
+        color: #FF9C00;
+        border-radius: 10px;
+        background-color: #F8F8F8; 
+        transition: background-color 0.3s ease, color 0.3s ease; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .show-menu li a {
+        position: relative;
+        text-decoration: none;
+    }
+
+    .show-menu li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ccc;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    .show-menu li a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+
+/* End of Responsive design for tablet */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Thank youuu */
+
+
+
+
+
