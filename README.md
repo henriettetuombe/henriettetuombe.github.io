@@ -16,9 +16,6 @@ I welcome contributions! Feel free to provide feedback, submit issues, or create
 
 License
 This project is created and managed by Henriette Tuombe.
-
-GitHub Page Link: https://henriettetuombe.github/henriettetuombe.github.io/
-
 Explore, enjoy, and happy coding! 🚀
 
 
