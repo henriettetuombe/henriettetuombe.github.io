@@ -1,88 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henriette Tuombe - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="portfolio.css" />
-  </head>
-  <body id="body-design">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <!-- navigation bar -->
+        /* Skills Progress Bar */
+        .skills-level-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skills-level {
+            position: relative;
+            width: 100px;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skills-level::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 0;
+            background: #204EC2;
+            transition: width 0.5s ease;
+        }
+
+        /* Set skill levels */
+        .skills-level[data-percent="90"]::before { width: 90%; }
+        .skills-level[data-percent="70"]::before { width: 70%; }
+        .skills-level[data-percent="92.5"]::before { width: 92.5%; }
+        .skills-level[data-percent="67"]::before { width: 67%; }
+        .skills-level[data-percent="50"]::before { width: 50%; }
+
+        /* Back-to-top button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            font-size: 18px;
+            background-color: #204EC2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Projects styling */
+        .projects-section-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card h2 a {
+            color: #204EC2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-card h2 a:hover {
+            color: #97B5DE;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .project-card span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body id="body-design">
+
+    <!-- Navigation bar -->
     <section id="navigation-link-container">
-      <div id="container1">
-        <div>
-          <ul class="logo">
-            <!-- SVG Logo or other branding here -->
-          </ul>
+        <div id="container1">
+            <div>
+                <ul class="logo">
+                    <li><a href="#">My Logo</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul id="first-navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="menu"><i class="fa-solid fa-bars"></i></a>
         </div>
-        <nav>
-          <ul id="first-navigation">
+        <ul class="display-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects-section">Projects</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contactUs">Contact Us</a></li>
-          </ul>
-        </nav>
-        
-        <a href="" id="menu"><i class="fa-solid fa-bars"></i></a>
-      </div>
-      <ul class="display-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contactUs">Contact Us</a></li>
-      </ul>
+        </ul>
     </section>
     <!-- End of navigation bar -->
-    
-    <!-- Introduction and about-me section -->
+
+    <!-- Introduction and About Me section -->
     <section id="about-me-container">
-      <p class="greeting-word">Hello, I'm Henriette</p>
-      <p class="play-role">
-        Full-stack Developer || <br />
-        Graphic Designer || <br />
-        Mentor
-      </p>
-      <div id="description-image-container">
-        <p id="first-paragraph">
-          Welcome to my digital space where lines of code come to life. I'm
-          Henriette, a passionate software developer on a journey to create
-          innovative solutions. Explore my projects, delve into the code, and
-          join me in this exciting tech adventure.
+        <p class="greeting-word">Hello, I'm Henriette</p>
+        <p class="play-role">
+            Full-stack Developer || <br />
+            Web/Graphic Designer || <br />
+            Mentor
         </p>
-        <img src="./UI/images/image-removebg-preview2.png" style="border-radius: 40%;" alt="Henriette Tuombe" />
-        <p id="second-paragraph">
-          Welcome to my digital space where lines of code come to life. I'm
-          Henriette, a passionate software developer on a journey to create
-          innovative solutions. Explore my projects, delve into the code, and
-          join me in this exciting tech adventure.
-        </p>
-        <div>
-          <a href=""><i class="fa-solid fa-circle-check"></i>32 projects</a>
-          <a href="./UI/images/My Professional CV.pdf"><i class="fa-solid fa-circle-down"></i>Download my Resume</a>
+        <div id="description-image-container">
+            <p id="first-paragraph">
+                Welcome to my digital space where lines of code come to life. I'm
+                Henriette, a passionate software developer focused on creating visually appealing and responsive websites. I have a collaborative mindset and work effectively with marketing and IT teams to bring ideas to life. Explore my projects to see how I combine frontend and backend skills to optimize user experiences.
+            </p>
+            <div>
+                <a href="#"><i class="fa-solid fa-circle-check"></i>46 projects</a>
+                <a href="UI/images/My CV_Henriette Tuombe.pdf" download>Download my Resume</a>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- End of introduction and About me section -->
-    
-    <!-- About me section design -->
-    <section class="about-me-section" id="about">
-        <h1>About Me</h1>
-        <p>I'm a passionate web developer, software engineer, and programmer skilled in Python, HTML, CSS, and JavaScript. I transform ideas into captivating websites and prioritize clean, efficient code for seamless performance. My expertise extends to frameworks like React, Node.js, Express.js, and Flask, as well as databases like MongoDB and MySQL, enabling me to build robust applications that conquer real-world challenges. Collaboration is my forte – I thrive on open communication, working closely with designers and stakeholders to bring projects to life. Problem-solving excites me, and I'm dedicated to finding elegant solutions that enhance user experiences. In the fast-paced tech world, I value adaptability, continuously learning and staying current with industry trends. I'm enthusiastic about contributing my skills to cutting-edge projects that push the limits of innovation.
-        </p>
-    </section>
-    <!-- End of About me section -->
-    
-    <!-- Skills section design -->
+    <!-- End of Introduction and About Me section -->
+
+    <!-- Skills Section -->
     <section class="skills-section" id="skills">
         <h1>Skills</h1>
         <div>
@@ -92,69 +167,84 @@
             <span><i class="fa-brands fa-js"></i>JavaScript</span>
             <span><i class="fa-brands fa-react"></i>React</span>
             <span><i class="fa-solid fa-database"></i>SQL</span>
+            <span><i class="fa-solid fa-server"></i>APIs & Web Services</span>
           </div>
           <div class="skills-level-container">
-              <div class="skills-level level1" data-percent="90">90%</div>
-              <div class="skills-level level2" data-percent="92.5">92.5%</div>
-              <div class="skills-level level3" data-percent="70">70%</div>
-              <div class="skills-level level4" data-percent="67">67%</div>
-              <div class="skills-level level5" data-percent="50">50%</div>
+              <div class="skills-level" data-percent="90"></div>
+              <div class="skills-level" data-percent="92.5"></div>
+              <div class="skills-level" data-percent="70"></div>
+              <div class="skills-level" data-percent="67"></div>
+              <div class="skills-level" data-percent="50"></div>
           </div>
         </div>
     </section>
-    <!-- End of skills section -->
+    <!-- End of Skills section -->
 
-    <!-- Projects section design -->
+    <!-- Projects Section -->
     <section id="projects-section">
         <h1>Projects</h1>
         <div class="projects-section-container">
-            <span id="icons-project"><a href=""><i class="fa-solid fa-chevron-left"></i></a></span>
-            <div class="project-div1 single-project">
-                <h1 id="javascript-title">JavaScript Calculator</h1>
-                <p>Using JavaScript, I created a modern calculator that is easy to use and includes essential features.</p>
-                <button>DEMO</button>
+            <div class="project-card">
+                <h2><a href="https://github.com/henriettetuombe/henriettetuombe.github.io" target="_blank">Personal Portfolio</a></h2>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <span>Technologies: HTML, CSS</span>
             </div>
-            <div class="project-div2 single-project">
-                <h1>Advice Generator App</h1>
-                <p>This app demonstrates the use of API integration with JavaScript to generate random advice.</p>
-                <button class="two-button">DEMO</button>
+            <div class="project-card">
+                <h2><a href="https://github.com/henriettetuombe/Data-Science-Project" target="_blank">Data Science Project</a></h2>
+                <p>Exploring data science techniques using Python and Jupyter Notebook.</p>
+                <span>Technologies: Python, Jupyter Notebook</span>
             </div>
-            <div class="project-div3 single-project">
-                <h1>Employee Management System</h1>
-                <p>This system manages employee data using REST API and MongoDB for data storage and management.</p>
-                <button>DEMO</button>
+            <div class="project-card">
+                <h2><a href="https://github.com/henriettetuombe/alu-web_back_end" target="_blank">Web Back-End</a></h2>
+                <p>Back-end web development project focusing on REST API creation.</p>
+                <span>Technologies: Python</span>
             </div>
-            <span id="icons-project"><a href=""><i class="fa-solid fa-chevron-right"></i></a></span>
+            <!-- Additional project cards as needed -->
         </div>
     </section>
-    <!-- End of projects section -->
+    <!-- End of Projects Section -->
 
-    <!-- Contact Us section -->
+    <!-- Blog Section -->
+    <section id="blogs">
+        <h1>Blogs</h1>
+        <div class="container-blog">
+            <div>
+                <h1>Responsive Web Design Tips</h1>
+                <p>A guide to creating visually appealing and functional websites across devices.</p>
+                <div id="read-more">
+                    <a href="#">Read more</a>
+                    <a href="#"><i class="fa-solid fa-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Contact Us Section -->
     <section class="contactUs-container" id="contactUs">
         <h1>Contact Form</h1>
-        <p>If you have any questions or suggestions, please don’t hesitate to contact me by filling out the form below.</p>
-        <form action="" id="form">
+        <p>If you have any questions or suggestions, please contact me by filling out the form below.</p>
+        <form id="form">
             <label for="full-name">Full name</label>
-            <input type="text" id="full-name" />
-            
+            <input type="text" id="full-name" required />
+
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
             <p id="errorProvidedMessage"></p>
-            
+
             <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="5" placeholder="Type here..." id="message"></textarea>
-            
-            <button>Send</button>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
         </form>
     </section>
-    <!-- End of contact section -->
+    <!-- End of Contact Us Section -->
 
     <!-- Footer -->
     <footer>
         <div id="address">
-            <span>Address:</span>
-            <span>Kigali-Rwanda/NYG0000</span>
-            <span>Tel:+250785557397</span>
+            <span>Address: Kigali-Rwanda/KG 53 St</span>
+            <span>Tel:+250781045480</span> 
             <span>Email:henrytuorb@gmail.com</span>
         </div>
         <div id="social-media-icons">
@@ -167,9 +257,42 @@
         <div id="copyright">
             <span>&copy; 2024 Henriette Tuombe</span>
         </div>
+        <button id="back-to-top">Top</button>
     </footer>
-    <!-- End of footer section -->
+    <!-- End of Footer -->
 
     <script src="portfolio.js"></script>
-  </body>
+    <script>
+        // Show "Back to Top" button when scrolling down
+        window.addEventListener("scroll", () => {
+            document.getElementById("back-to-top").style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+        // Form validation and submission feedback
+        document.getElementById("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const fullName = document.getElementById("full-name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const errorMessage = document.getElementById("errorProvidedMessage");
+            errorMessage.textContent = "";
+
+            if (!fullName) {
+                errorMessage.textContent = "Full name is required.";
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                errorMessage.textContent = "Please provide a valid email.";
+            } else if (!message) {
+                errorMessage.textContent = "Message cannot be empty.";
+            } else {
+                alert("Thank you for reaching out!");
+                document.getElementById("form").reset();
+            }
+        });
+
+        // Smooth scroll to top
+        document.getElementById("back-to-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
 </html>
